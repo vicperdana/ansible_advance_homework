@@ -1,0 +1,4 @@
+---
+# tasks file for osp-facts
+   - name: Fetch Instance Info
+   - name: Create In-memory inventory for OSP Instances

@@ -1,0 +1,10 @@
+---
+
+- name: install {{ payload }}
+
+- name: enable {{ payload }} at boot
+
+- name: configure haproxy to load balance over app servers
+
+- name: start {{ payload }}
+
