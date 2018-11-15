@@ -5,10 +5,10 @@
      name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
      state: present 
 - name: disable selinux
-  command: setenfore 0
+  command: setenforce 0
 - name: Install required packages 
   yum: 
-     name: "{{item}}"
+     name:
        - python 
        - python-pip 
        - python-devel 
