@@ -4,22 +4,22 @@
   yum:
      name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
      state: present 
+- name: disable selinux
+  command: setenfore 0
 - name: Install required packages 
   yum: 
      name: "{{item}}"
+       - python 
+       - python-pip 
+       - python-devel 
+       - gcc 
+       - ansible
      state: latest 
   loop: 
-    - python 
-    - python-pip 
-    - python-devel 
-    - gcc 
-    - ansible
 - name: Install openstacksdk library
   pip:
     name: openstacksdk 
     state: latest
-- name: disable selinux
-  command: setenfore 0
 - name: Downgrade python
   yum:
    name:
