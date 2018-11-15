@@ -13,12 +13,18 @@
     - python-pip 
     - python-devel 
     - gcc 
-    - ansible 
-    - python-openstackclient
-- name: Install shade library
+- name: Install openstacksdk library
   pip:
-    name: shade 
+    name: openstacksdk 
     state: latest
+- name: disable selinux
+  command: setenfore 0
+- name: Downgrade python
+  yum:
+   name:
+    - python-2.7.5-48.el7.x86_64
+    - python-libs
+   state: downgrade 
 - name: Create clouds.yaml file
   blockinfile:
     create: yes
