@@ -17,7 +17,8 @@
    name:
     - python-2.7.5-48.el7.x86_64
     - python-libs
-   state: downgrade 
+   state: present
+   allow_downgrade: yes 
 - name: Create clouds.yaml file
   blockinfile:
     create: yes
