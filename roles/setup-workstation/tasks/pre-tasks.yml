@@ -13,6 +13,7 @@
     - python-pip 
     - python-devel 
     - gcc 
+    - ansible
 - name: Install openstacksdk library
   pip:
     name: openstacksdk 
