@@ -6,16 +6,8 @@
      state: present 
 - name: disable selinux
   command: setenforce 0
-- name: Install required packages 
-  yum: 
-     name:
-       - python 
-       - python-pip 
-       - python-devel 
-       - gcc 
-       - ansible
-     state: latest 
-  loop: 
+- name: install pip
+  command: easy_install pip
 - name: Install openstacksdk library
   pip:
     name: openstacksdk 
