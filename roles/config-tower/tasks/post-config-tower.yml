@@ -1,7 +1,7 @@
 - name: Create Homework Assignment project 
 
 
-- name: Machine Credentail to connect to workstation using openstack.pub
+- name: Machine Credential to connect to workstation using openstack.pub
   tower_credential:
 
 - name: Create Inventory
