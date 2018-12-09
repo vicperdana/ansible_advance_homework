@@ -11,3 +11,4 @@
       name: "{{ item.name }}"
       state: absent
     loop: "{{result.ansible_facts.openstack_servers}}"
+   
