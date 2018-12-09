@@ -41,7 +41,7 @@
     tower_host: tower1.{{tower_GUID}}.example.opentlc.com
     tower_username: admin
     tower_password: r3dh4t1!
-    ssh_key_data: /root/.ssh/206akey.pem
+    ssh_key_data: /root/.ssh/openbastionssh.pem
     username: "{{ opentlc_login }}"
 
 - name: Remove secret
